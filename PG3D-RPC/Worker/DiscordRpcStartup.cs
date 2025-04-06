@@ -66,6 +66,14 @@ public class DiscordRpcStartup : IDisposable
                     Size = _random.Next(9, 10),
                     Max = 10
                 },
+                Buttons = new []
+                {
+                    new Button
+                    {
+                        Label = "Ask to join",
+                        Url = "https://guns.lol/gr86"
+                    }
+                }
             });
 
             await Task.Delay(TimeSpan.FromSeconds(30));
@@ -95,6 +103,14 @@ public class DiscordRpcStartup : IDisposable
                     Size = _random.Next(1, 10),
                     Max = 10
                 },
+                Buttons = new []
+                {
+                    new Button
+                    {
+                        Label = "Ask to join",
+                        Url = "https://guns.lol/gr86"
+                    }
+                }
             });
 
             await Task.Delay(TimeSpan.FromSeconds(30));
@@ -126,6 +142,14 @@ public class DiscordRpcStartup : IDisposable
                     Size = teammates,
                     Max = 4
                 },
+                Buttons = new []
+                {
+                    new Button
+                    {
+                        Label = "Ask to join",
+                        Url = "https://guns.lol/gr86"
+                    }
+                }
             });
             
             wave++;
